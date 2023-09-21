@@ -2,34 +2,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gardenia</title>
+    <title>Your Website Title</title>
 </head>
 <body>
     <!-- JavaScript to load the chatbot asynchronously -->
     <script>
         function loadChatbotScript() {
             var script = document.createElement('script');
-            script.src = 'https://cdn.botpress.cloud/webchat/v0/inject.js'; // Updated script source to v0
+            script.src = 'https://cdn.botpress.cloud/webchat/v0/inject.js';
             script.async = true;
             document.body.appendChild(script);
 
             script.onload = function () {
                 window.botpressWebChat.init({
-                    "botId": "73a61896-2be5-4968-a382-ad188572ef87", // Your new bot ID
-                    "clientId": "73a61896-2be5-4968-a382-ad188572ef87", // Your new client ID
-                    "hostUrl": "https://cdn.botpress.cloud/webchat/v0", // Updated hostUrl to v0
+                    "botId": "73a61896-2be5-4968-a382-ad188572ef87",
+                    "clientId": "73a61896-2be5-4968-a382-ad188572ef87",
+                    "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
                     "messagingUrl": "https://messaging.botpress.cloud",
-                    "composerPlaceholder": "Chat with bot", // Updated placeholder text
-                    "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+                    "botName": "Gardenia",
+                    "avatarUrl": "https://i.postimg.cc/YC8DyGW1/Screenshot-2023-09-13-213012.jpg",
+                    "containerWidth": "100%25",
+                    "layoutWidth": "100%25",
+                    "composerPlaceholder": "Start typing here",
+                    "botConversationDescription": "Your Property Partner",
                     "hideWidget": true,
                     "disableAnimations": true,
-                    "enableConversationDeletion": true,
-                    "botName": "Gardenia", // Add botName
-                    "avatarUrl": "https://i.postimg.cc/YC8DyGW1/Screenshot-2023-09-13-213012.jpg", // Add avatarUrl
-                    "containerWidth": "100%", // Add containerWidth
-                    "layoutWidth": "100%", // Add layoutWidth
+                    "enableConversationDeletion": true
                 });
-
                 window.botpressWebChat.onEvent(function () {
                     window.botpressWebChat.sendEvent({ type: 'show' });
                 }, ['LIFECYCLE.LOADED']);
@@ -41,4 +40,3 @@
     </script>
 </body>
 </html>
-
