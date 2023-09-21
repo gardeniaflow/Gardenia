@@ -15,8 +15,8 @@
 
             script.onload = function () {
                 window.botpressWebChat.init({
-                    "botId": "73a61896-2be5-4968-a382-ad188572ef87", // Your new bot ID
-                    "clientId": "73a61896-2be5-4968-a382-ad188572ef87", // Your new client ID
+                    "botId": "73a61896-2be5-4968-a382-ad188572ef87", // Bot ID from the first script
+                    "clientId": "73a61896-2be5-4968-a382-ad188572ef87", // Client ID from the first script
                     "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
                     "messagingUrl": "https://messaging.botpress.cloud",
                     "composerPlaceholder": "Start typing here",
@@ -34,14 +34,6 @@
                     window.botpressWebChat.sendEvent({ type: 'show' });
                 }, ['LIFECYCLE.LOADED']);
             };
-        }
-
-        // Call the function to load the chatbot script
-        loadChatbotScript();
-    </script>
-</body>
-</html>
-
         }
 
         // Call the function to load the chatbot script
