@@ -1,8 +1,21 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gardenia</title>
+
+    <style>
+        /* Make the chatbot container fullscreen */
+        #botpress-webchat {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999; /* Ensure it's on top of other elements */
+        }
+    </style>
 </head>
 <body>
     <!-- JavaScript to load the chatbot asynchronously -->
@@ -26,8 +39,8 @@
                     "enableConversationDeletion": true,
                     "botName": "Gardenia", // Add botName
                     "avatarUrl": "https://i.postimg.cc/YC8DyGW1/Screenshot-2023-09-13-213012.jpg", // Add avatarUrl
-                    "containerWidth": "100%25", // Add containerWidth
-                    "layoutWidth": "100%25", // Add layoutWidth
+                    "containerWidth": "100%", // Set containerWidth to 100%
+                    "layoutWidth": "100%", // Set layoutWidth to 100%
                 });
 
                 window.botpressWebChat.onEvent(function () {
@@ -41,3 +54,4 @@
     </script>
 </body>
 </html>
+
