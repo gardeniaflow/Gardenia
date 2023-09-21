@@ -2,14 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Gardenia</title>
 </head>
 <body>
     <!-- JavaScript to load the chatbot asynchronously -->
     <script>
         function loadChatbotScript() {
             var script = document.createElement('script');
-            script.src = 'https://cdn.botpress.cloud/webchat/v1/inject.js'; // Using v1
+            script.src = 'https://cdn.botpress.cloud/webchat/v0/inject.js'; // Using v1
             script.async = true;
             document.body.appendChild(script);
 
