@@ -1,44 +1,36 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gardenia</title>
-</head>
-<body>
-    <!-- JavaScript to load the chatbot asynchronously -->
-    <script>
-        function loadChatbotScript() {
-            var script = document.createElement('script');
-            script.src = 'https://cdn.botpress.cloud/webchat/v0/inject.js'; // Using v1
-            script.async = true;
-            document.body.appendChild(script);
-
-            script.onload = function () {
-                window.botpressWebChat.init({
-                    "botId": "73a61896-2be5-4968-a382-ad188572ef87", // Your new bot ID
-                    "clientId": "73a61896-2be5-4968-a382-ad188572ef87", // Your new client ID
-                    "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-                    "messagingUrl": "https://messaging.botpress.cloud",
-                    "composerPlaceholder": "Start typing here",
-                    "botConversationDescription": "Your Property Partner",
-                    "hideWidget": true,
-                    "disableAnimations": true,
-                    "enableConversationDeletion": true,
-                    "botName": "Gardenia", // Add botName
-                    "avatarUrl": "https://i.postimg.cc/YC8DyGW1/Screenshot-2023-09-13-213012.jpg", // Add avatarUrl
-                    "containerWidth": "100%25", // Add containerWidth
-                    "layoutWidth": "100%25", // Add layoutWidth
-                });
-
-                window.botpressWebChat.onEvent(function () {
-                    window.botpressWebChat.sendEvent({ type: 'show' });
-                }, ['LIFECYCLE.LOADED']);
-            };
-        }
-
-        // Call the function to load the chatbot script
-        loadChatbotScript();
-    </script>
-</body>
-</html>
-
+// Import the Botpress WebChat JavaScript file
+<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+ 
+// Initialize the Botpress WebChat with the required parameters
+<script>
+    window.botpressWebChat.init({
+        // Replace <your-bot-id> and <your-client-id> with your actual bot and client IDs
+        "botId": "73a61896-2be5-4968-a382-ad188572ef87",
+        "clientId": "73a61896-2be5-4968-a382-ad188572ef87",
+ 
+        // Set the URL for the Botpress WebChat JavaScript file and the messaging server
+        "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+        "messagingUrl": "https://messaging.botpress.cloud",
+ 
+        // Set the name of the bot that will be displayed in the WebChat interface
+        "botName": "Test",
+ 
+        // Set the width of the WebChat container and layout to 100% (Full Screen)
+        "containerWidth": "100%25",
+        "layoutWidth": "100%25",
+ 
+        // Hide the widget and disable animations
+        "hideWidget": true,
+        "disableAnimations": true,
+    });
+ 
+    // Opens up the Chatbot by default
+    // This lets users start chatting with the Chatbot without needing to click any buttons or menus.
+    window.botpressWebChat.onEvent(
+        function () {
+            window.botpressWebChat.sendEvent({ type: "show" });
+        },
+        ["LIFECYCLE.LOADED"]
+    );
+</script>
+ 
