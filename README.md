@@ -29,7 +29,6 @@
                     "useSessionStorage": true,
                     "disableAnimations": true,
                     "frontendVersion": "v1",
-                    "stylesheet": "https://webchat-styler-css.botpress.app/prod/a0e8a6c2-cb47-455b-baa3-fb1120e04262/v9492/style.css",
                     "enableConversationDeletion": true
                 });
                 window.botpressWebChat.onEvent(function () {
