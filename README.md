@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Gardenia</title>
 </head>
 <body>
     <!-- JavaScript to load the chatbot asynchronously -->
@@ -22,17 +21,14 @@
                     "messagingUrl": "https://messaging.botpress.cloud",
                     "botName": "Gardenia",
                     "avatarUrl": "https://i.postimg.cc/YC8DyGW1/Screenshot-2023-09-13-213012.jpg",
-                    "containerWidth": "100%",
-                    "layoutWidth": "100%",
+                    "containerWidth": "100%25",
+                    "layoutWidth": "100%25",
                     "composerPlaceholder": "Start typing here",
                     "botConversationDescription": "Your Property Partner",
                     "hideWidget": true,
                     "disableAnimations": true,
                     "enableConversationDeletion": true
                 });
-
-                // Opens up the Chatbot by default
-                // This lets users start chatting with the Chatbot without needing to click any buttons or menus.
                 window.botpressWebChat.onEvent(function () {
                     window.botpressWebChat.sendEvent({ type: 'show' });
                 }, ['LIFECYCLE.LOADED']);
