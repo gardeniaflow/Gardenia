@@ -1,26 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gardenia</title>
-    <style>
-        /* Your existing CSS code */
-
-        /* Modify the background color to blue */
-        .bpw-header-container {
-            /* sets the border radius of the element */
-            border-radius: var(--spacing-large);
-            /* sets the background color to blue */
-            background: #0074D9; /* You can change this color code to the shade of blue you prefer */
-            /* sets the border of the element */
-            border: 1px solid var(--zinc-200);
-            /* sets the border radius of the element (repeated declaration) */
-            border-radius: var(--spacing-medium);
-            /* sets the padding of the element */
-            padding: var(--spacing-large) var(--spacing-x-large);
-        }
-    </style>
 </head>
 <body>
     <!-- JavaScript to load the chatbot asynchronously -->
@@ -59,4 +41,3 @@
     </script>
 </body>
 </html>
-
