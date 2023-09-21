@@ -16,12 +16,12 @@
         "botName": "Test",
  
         // Set the width of the WebChat container and layout to 100% (Full Screen)
-        "containerWidth": "100%25",
-        "layoutWidth": "100%25",
+        "containerWidth": "100%",
+        "layoutWidth": "100%",
  
         // Hide the widget and disable animations
         "hideWidget": true,
-        "disableAnimations": true,
+        "disableAnimations": true
     });
  
     // Opens up the Chatbot by default
@@ -33,4 +33,4 @@
         ["LIFECYCLE.LOADED"]
     );
 </script>
- 
+
