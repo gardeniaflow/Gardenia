@@ -15,9 +15,9 @@
 
             script.onload = function () {
                 window.botpressWebChat.init({
-                    "botId": "73a61896-2be5-4968-a382-ad188572ef87",
-                    "clientId": "73a61896-2be5-4968-a382-ad188572ef87",
-                    "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+                    "botId": "0e30855c-6873-4f87-9de6-b3352a0622b3",
+                    "clientId": "0e30855c-6873-4f87-9de6-b3352a0622b3",
+                    "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
                     "messagingUrl": "https://messaging.botpress.cloud",
                     "botName": "Gardenia",
                     "avatarUrl": "https://i.postimg.cc/YC8DyGW1/Screenshot-2023-09-13-213012.jpg",
@@ -28,6 +28,7 @@
                     "hideWidget": true,
                     "useSessionStorage": true,
                     "disableAnimations": true,
+                    "frontendVersion": "v1",
                     "enableConversationDeletion": true
                 });
                 window.botpressWebChat.onEvent(function () {
