@@ -26,7 +26,7 @@
                     "composerPlaceholder": "Start typing here",
                     "botConversationDescription": "Your Property Partner",
                     "hideWidget": true,
-                    "stylesheet": "https://webchat-styler-css.botpress.app/prod/a0e8a6c2-cb47-455b-baa3-fb1120e04262/v86785/style.css",
+                    "stylesheet": "https://webchat-styler-css.botpress.app/prod/a0e8a6c2-cb47-455b-baa3-fb1120e04262/v53229/style.css",
                     "useSessionStorage": true,
                     "disableAnimations": true,
                     "frontendVersion": "v1",
