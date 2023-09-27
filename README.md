@@ -20,7 +20,7 @@
                     "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
                     "messagingUrl": "https://messaging.botpress.cloud",
                     "botName": "Gardenia",
-                    "avatarUrl": "https://i.postimg.cc/Gh3kbqjG/image502-1695792437594.jpg",
+                    "avatarUrl": "https://i.postimg.cc/NMYxmYRP/image502-1695792437594.jpg",
                     "containerWidth": "100%25",
                     "layoutWidth": "100%25",
                     "composerPlaceholder": "Start typing here",
@@ -28,7 +28,7 @@
                     "hideWidget": true,
                     "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/5ce2b2c8-4482-424a-8e12-ad6bba19692c/v62394/style.css",
                     "disableAnimations": true,
-                    "lazySocket": true,
+                    "lazySocket": false,
                     "useSessionStorage": true,
                     "frontendVersion": "v1",
                     "enableConversationDeletion": true
