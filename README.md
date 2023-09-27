@@ -17,7 +17,7 @@
                 window.botpressWebChat.init({
                     "botId": "0e30855c-6873-4f87-9de6-b3352a0622b3",
                     "clientId": "0e30855c-6873-4f87-9de6-b3352a0622b3",
-                    "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+                    "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
                     "messagingUrl": "https://messaging.botpress.cloud",
                     "botName": "Gardenia",
                     "avatarUrl": "https://i.postimg.cc/YC8DyGW1/Screenshot-2023-09-13-213012.jpg",
@@ -26,9 +26,9 @@
                     "composerPlaceholder": "Start typing here",
                     "botConversationDescription": "Your Property Partner",
                     "hideWidget": true,
-                    "stylesheet": "https://webchat-styler-css.botpress.app/prod/a0e8a6c2-cb47-455b-baa3-fb1120e04262/v53229/style.css",
-                    "useSessionStorage": true,
+                    "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/5ce2b2c8-4482-424a-8e12-ad6bba19692c/v10440/style.css",
                     "disableAnimations": true,
+                    "lazySocket": true,
                     "frontendVersion": "v1",
                     "enableConversationDeletion": true
                 });
