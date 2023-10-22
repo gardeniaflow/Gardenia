@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gardenia</title>
-
+    
     <style>
         /* CSS for preloading overlay */
         .preload-overlay {
@@ -15,6 +15,7 @@
             height: 100%;
             background: white; /* You can change the background color */
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             z-index: 9999;
@@ -22,12 +23,16 @@
         .preload-logo {
             max-width: 100%; /* Ensure the logo fits within the screen */
         }
+        .loading-text {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-    <!-- Preloading overlay with your logo -->
+    <!-- Preloading overlay with your logo and loading text -->
     <div class="preload-overlay">
         <img src="https://i.postimg.cc/NMYxmYRP/image502-1695792437594.jpg" alt="Your Logo" class="preload-logo">
+        <p class="loading-text">Loading...</p>
     </div>
 
     <!-- JavaScript to load the chatbot asynchronously -->
