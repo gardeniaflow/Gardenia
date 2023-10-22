@@ -29,29 +29,13 @@
             color: #66ba69;
             margin-top: 10px;
         }
-        .loading-dots {
-            font-size: 24px; /* Match the font size with the loading text */
-            animation: loadingDots 1s infinite; /* Define the animation */
-        }
-
-        @keyframes loadingDots {
-            0% {
-                content: ".";
-            }
-            33% {
-                content: "..";
-            }
-            66% {
-                content: "...";
-            }
-        }
     </style>
 </head>
 <body>
-    <!-- Preloading overlay with your logo, loading text, and moving dots -->
+    <!-- Preloading overlay with your logo and loading text -->
     <div class="preload-overlay">
         <img src="https://i.postimg.cc/NMYxmYRP/image502-1695792437594.jpg" alt="Your Logo" class="preload-logo">
-        <p class="loading-text">Loading<span class="loading-dots"></span></p>
+        <p class="loading-text">Loading...</p>
     </div>
 
     <!-- JavaScript to load the chatbot asynchronously -->
